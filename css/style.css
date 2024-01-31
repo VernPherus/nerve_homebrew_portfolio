@@ -1,4 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*
+    Navbar
+*/
+.sidenav{
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+}
+
+.sidenav .user{
+    height: 100%;
+}
+
+.sidenav .navbar{
+    height: 100%;
+}
+
+.sidenav .navbar-nav{
+    height: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 100%;
 }
