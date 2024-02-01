@@ -16,6 +16,10 @@
     color: var(--text);
 }
 
+body{
+    background-color: var(--background);
+}
+
 hr {
     border-top: 1px solid var(--secondary);
 }
@@ -80,6 +84,7 @@ hr {
     justify-content: space-between;
     font-size: 16px;
     padding: 10px;
+    backdrop-filter: blur(13px);
 }
 
 .logo {
@@ -144,6 +149,7 @@ ul li a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    margin-left: 5%;
 }
 
 .hero_span{
@@ -170,9 +176,13 @@ ul li a {
     align-items: center;
     justify-content: center;
     background-image: url('img/bg/bg_grd_wave.jpg');
+    margin-left: 5%;
 }
 
-
+.about_me_img{
+    max-width: 100%;
+    height: auto;
+}
 
 /*
 *  End of About me
@@ -189,9 +199,10 @@ ul li a {
     align-items: center;
     justify-content: center;
     background-color: var(--background);
+    margin-left: 5%;
 }
 
-.row{
+.projects .row{
     background-color: var(--background);
 }
 
@@ -209,6 +220,11 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: radial-gradient(circle, rgba(66,102,109,1) 0%, rgba(7,4,4,1) 100%);
+    margin-left: 5%;
+}
+
+.services .card{
     background-color: var(--background);
 }
 
@@ -226,6 +242,11 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--background);
+    margin-left: 5%;
+}
+
+.contacts .card{
     background-color: var(--background);
 }
 
