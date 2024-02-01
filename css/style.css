@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
-:root{
-    --primary : #caa8a8;
-    --secondary : #42666d;
-    --accent : #fc0303;
+:root {
+    --primary: #caa8a8;
+    --secondary: #42666d;
+    --accent: #fc0303;
     --background: #070404;
     --text: #f0e6e6;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,10 +16,35 @@
     color: var(--text);
 }
 
+hr {
+    border-top: 1px solid var(--secondary);
+}
+
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
 /*
  *  Navbar
 */
-.sidenav{
+.sidenav {
     width: 15%;
     height: 100vh;
     position: fixed;
@@ -34,20 +59,20 @@
 .nopadding {
     padding: 0 !important;
     margin: 0 !important;
- }
+}
 
-.user{
+.user {
     width: 110px;
     height: 100%;
     transition: width 0.5s;
 }
 
-.user .navbar{
+.user .navbar {
     width: 60px;
     height: 100%;
 }
 
-.user .navbar-nav{
+.user .navbar-nav {
     height: 100%;
     width: 100%;
     display: flex;
@@ -57,13 +82,17 @@
     padding: 10px;
 }
 
-.logo{
-    width: 60px; 
+.logo {
+    width: 60px;
     height: 60px;
     white-space: nowrap;
 }
 
-ul li{
+.logo_span {
+    color: var(--accent);
+}
+
+ul li {
     margin: 30px 0;
     display: flex;
     align-items: center;
@@ -71,29 +100,29 @@ ul li{
     cursor: pointer;
 }
 
-ul li p{
+ul li p {
     white-space: nowrap;
     display: none;
 }
 
-ul li a{
+ul li a {
     color: var(--text);
 }
 
 
-.user:hover{
+.user:hover {
     width: 250px;
 }
 
-.user:hover .navbar-nav{
+.user:hover .navbar-nav {
     overflow: visible;
 }
 
-.user:hover .navbar{
+.user:hover .navbar {
     width: 100%;
 }
 
-.user:hover p{
+.user:hover p {
     display: block;
 }
 
@@ -105,7 +134,55 @@ ul li a{
  * Hero
 */
 
-.hero{
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.hero_span{
+    color: var(--accent);
+}
+
+.hero_img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+ * End of Hero
+*/
+
+/*
+ * About me
+*/
+
+.about-me {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('img/bg/bg_grd_wave.jpg');
+}
+
+
+
+/*
+*  End of About me
+*/
+
+/*
+* Projects
+*/
+
+.projects {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -114,21 +191,58 @@ ul li a{
     background-color: var(--background);
 }
 
-span{
-    color: var(--accent);
-}
-
-button{
-    width: 30vh;
-    height: 5vh;
+.row{
     background-color: var(--background);
-
 }
 
 /*
- * End of Hero
+* End of Projects
 */
 
 /*
- * 
+* Services
+*/
+
+.services {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+}
+
+/*
+* End of Services
+*/
+
+/*
+* Contacts
+*/
+
+.contacts {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+}
+
+/*
+* End of Contacts
+*/
+
+/*
+* Footer
+*/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+}
+
+/*
+* End of Footer
 */
