@@ -140,7 +140,7 @@ ul li a {
 */
 
 .hero {
-    width: 100%;
+    width: 95%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -170,7 +170,7 @@ ul li a {
 */
 
 .about-me {
-    width: 100%;
+    width: 95%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -193,7 +193,7 @@ ul li a {
 */
 
 .projects {
-    width: 100%;
+    width: 95%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -215,7 +215,7 @@ ul li a {
 */
 
 .services {
-    width: 100%;
+    width: 95%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -237,7 +237,7 @@ ul li a {
 */
 
 .contacts {
-    width: 100%;
+    width: 95%;
     height: 100vh;
     display: flex;
     align-items: center;
