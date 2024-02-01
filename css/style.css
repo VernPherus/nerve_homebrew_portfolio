@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
+:root{
+    --primary : #caa8a8;
+    --secondary : #42666d;
+    --accent : #fc0303;
+    --background: #070404;
+    --text: #f0e6e6;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
+    color: var(--text);
 }
 
 /*
-    Navbar
+ *  Navbar
 */
 .sidenav{
     width: 15%;
@@ -27,22 +36,31 @@
     margin: 0 !important;
  }
 
-.sidenav .user{
+.user{
+    width: 110px;
+    height: 100%;
+    transition: width 0.5s;
+}
+
+.user .navbar{
+    width: 60px;
     height: 100%;
 }
 
-.sidenav .navbar{
+.user .navbar-nav{
     height: 100%;
-}
-
-.sidenav .navbar-nav{
-    height: 100%;
+    width: 100%;
     display: flex;
     align-self: center;
     justify-content: space-between;
-    width: 100%;
     font-size: 16px;
-    padding: 10px
+    padding: 10px;
+}
+
+.logo{
+    width: 60px; 
+    height: 60px;
+    white-space: nowrap;
 }
 
 ul li{
@@ -55,4 +73,62 @@ ul li{
 
 ul li p{
     white-space: nowrap;
+    display: none;
 }
+
+ul li a{
+    color: var(--text);
+}
+
+
+.user:hover{
+    width: 250px;
+}
+
+.user:hover .navbar-nav{
+    overflow: visible;
+}
+
+.user:hover .navbar{
+    width: 100%;
+}
+
+.user:hover p{
+    display: block;
+}
+
+/*
+ * End of navbar
+*/
+
+/*
+ * Hero
+*/
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+}
+
+span{
+    color: var(--accent);
+}
+
+button{
+    width: 30vh;
+    height: 5vh;
+    background-color: var(--background);
+
+}
+
+/*
+ * End of Hero
+*/
+
+/*
+ * 
+*/
